@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* global variable */
-:root{
+:root {
     /* opecity ke liye hai */
-    --a:0;
+    --a: 0;
 }
 
 * {
@@ -312,10 +312,10 @@ body {
 }
 
 /* jaise hi koi hover karega tab ye properties applie hoga  */
-.card:hover{
+.card:hover {
     background-color: rgb(100, 99, 99);
     cursor: pointer;
-    --a:1;               
+    --a: 1;
 
 }
 
@@ -450,12 +450,183 @@ body {
 
 }
 
-.range input{
+.range input {
     cursor: pointer;
 
 }
 
 
+
+
+/* horizontal line khicha hai */
+
+hr {
+    display: block;
+    border: none;
+    border-top: .1px solid rgb(69, 68, 68);
+    width: 95%;
+    /* margin: 50px auto;   */
+    margin-top: 110px;
+}
+
+
+/* company information */
+.companyinfo {
+    display: flex;
+    justify-content: flex-start;
+
+    margin-left: 25px;
+    margin-top: 51px;
+    gap: 81px;
+    font-family: serif;
+}
+
+/* ul */
+ul {
+    list-style: none;
+
+}
+
+
+/* Company */
+.Company ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* 👈 change value as you want */
+
+    padding-top: 10px;
+    color: rgb(161, 160, 160);
+    cursor: pointer;
+    font-size: 15px;
+
+
+}
+
+/* Company a ka kam huaa hai */
+.Company ul li a {
+    text-decoration: none;
+    color: rgb(161, 160, 160);
+}
+
+/* Company a pe hover ka kam huaa hai */
+.Company ul li a:hover {
+
+    color: rgb(161, 160, 160);
+    background-color: #595858;
+    border-radius: 3px;
+    text-decoration: underline;
+
+}
+
+
+/* Communities */
+.Communities ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* 👈 change value as you want */
+
+    padding-top: 10px;
+    color: rgb(161, 160, 160);
+
+}
+
+
+/* Communities a ka kam huaa hai */
+.Communities ul li a {
+    text-decoration: none;
+    color: rgb(161, 160, 160);
+}
+
+/*Communities  a pe hover ka kam huaa hai */
+.Communities ul li a:hover {
+
+    color: rgb(161, 160, 160);
+    background-color: #595858;
+    border-radius: 3px;
+    text-decoration: underline;
+
+}
+
+
+/* Usefullinks */
+.Usefullinks ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* 👈 change value as you want */
+
+    padding-top: 10px;
+    color: rgb(161, 160, 160);
+
+}
+
+/* Usefullinks a ka kam huaa hai */
+.Usefullinks ul li a {
+    text-decoration: none;
+    color: rgb(161, 160, 160);
+}
+
+/*Communities  a pe hover ka kam huaa hai */
+.Usefullinks ul li a:hover {
+
+    color: rgb(161, 160, 160);
+    background-color: #595858;
+    border-radius: 3px;
+    text-decoration: underline;
+
+}
+
+
+/* SpotifyPlans */
+.SpotifyPlans ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* 👈 change value as you want */
+
+    padding-top: 10px;
+    color: rgb(161, 160, 160);
+
+
+
+}
+
+/* SpotifyPlans a ka kam huaa hai */
+.SpotifyPlans ul li a {
+    text-decoration: none;
+    color: rgb(161, 160, 160);
+}
+
+/*SpotifyPlans  a pe hover ka kam huaa hai */
+.SpotifyPlans ul li a:hover {
+
+    color: rgb(161, 160, 160);
+    background-color: #595858;
+    border-radius: 3px;
+    text-decoration: underline;
+
+}
+
+
+/* socialmedialogo */
+.socialmedialogo {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.socialmedialogo img {
+    border-radius: 51px;
+    gap: 10px;
+
+}
+
+.socialmedialogo img:hover {
+    background-color: #595858;
+
+}
 
 
 
@@ -516,8 +687,8 @@ body {
 
     }
 
-    
-    .songbuttons :hover{
+
+    .songbuttons :hover {
         cursor: pointer;
     }
 
@@ -545,7 +716,7 @@ body {
         max-height: 65vh;
     }
 
-   
+
 
 
     /* timevolume  */
@@ -567,15 +738,26 @@ body {
     }
 
 
+    /* companyinfo */
+    .companyinfo {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+
+    }
+
+
+
 }
 
 
 
-/* Another media querie */   
-@media(max-width: 450px){
+
+/* Another media querie */
+@media(max-width: 450px) {
 
     /* card */
-    .card{
+    .card {
         width: 100%;
 
     }

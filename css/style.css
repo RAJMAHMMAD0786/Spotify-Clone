@@ -493,7 +493,6 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* 👈 change value as you want */
 
     padding-top: 10px;
     color: rgb(161, 160, 160);

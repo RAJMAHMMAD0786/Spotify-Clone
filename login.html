@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="RegistrationForm">
+
+        <!-- header -->
+        <div class="header">
+            <h2>Register Now</h2>
+        </div>
+
+        <form action="This is a form">
+
+            <!-- Name -->
+            <div class="Name">
+                <label for="Name">First Name:-</label>
+            </div>
+            <div class="Nameinput">
+                <input type="text" name="" id="" placeholder="Enter Your First Name">
+                <input type="text" name="" id="" placeholder="Enter Your Last Name">
+            </div>
+
+
+
+            <!-- Email Address -->
+            <div class="Email">
+                <label for="Email">Email Adress:-</label>
+            </div>
+            <div class="Emailinput">
+
+                <input type="text" name="" id="" placeholder="Enter Email Adress">
+            </div>
+
+            <!-- Phone number -->
+            <div class="Number">
+                <label for="Email">Phone Number:-</label>
+            </div>
+            <div class="Numberinput">
+
+                <input type="number" name="" id="" placeholder="Enter Phone Number">
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="DOB">
+                <label for="number">Date of Birth:-</label>
+            </div>
+            <div class="DOBinput">
+
+                <input type="number" name="" id="" placeholder="Enter Date of Birth">
+            </div>
+
+
+            <!-- choose gender -->
+            <div class="Gender">
+                <label for="">Gender :</label>
+
+                <input type="radio" name="Gender" id="" value="Male">
+                <label for="">Male</label>
+
+                <input type="radio" name="Gender" id="" value="Female">
+                <label for="">Female</label>
+
+                <input type="radio" name="Gender" id="" value="Other">
+                <label for="">Other</label>
+            </div>
+
+            <!-- Choose Cource -->
+            <div class="Country">
+                <label for="">Select Country</label>
+            </div>
+            <div class="selectcountry">
+                <select name="Cource" id="Cource" pattern=" " required>
+                    <option value="">Select Your Country</option>
+                    <option value="CSE">INDIA</option>
+                    <option value="IT">USA</option>
+                    <option value="AIML">JAPAN</option>
+                    <option value="ML">UAE</option>
+                    <option value="OTHER">OTHER</option>
+                </select>
+            </div>
+
+            <!-- submmit button -->
+            <div class="btn">
+                <button onclick="showMessage()">SUBMIT</button>
+            </div>
+
+            <!-- message show karne ke liye jab form submmit karu toh -->
+            <script>
+                function showMessage() {
+                    alert("The application is successful!");
+                }
+            </script>
+
+
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

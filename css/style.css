@@ -259,12 +259,178 @@ body {
     font-size: 16px;
 }
 
-.loginbtn:hover {
+.loginbtn a {
+    text-decoration: none;
+}
+
+.loginbtn a:hover {
     background-color: rgb(236, 232, 232);
     font-weight: bold;
     font-size: 17px;
 
 }
+
+
+
+/* ragistration form */
+.RegistrationForm {
+    height: 80vh;
+    width: 30vw;
+    background-color: #595858;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 15px;
+
+
+}
+
+/* header */
+.header {
+    background-color: rgb(238, 248, 223);
+    color: #595858;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 10vh;
+
+
+}
+
+/* Name  */
+.Name {
+    cursor: pointer;
+    margin-left: 30px;
+
+
+}
+
+/* input class hai jo used kiya gya hai */
+.Nameinput {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ye input jaha pe ham kuchh input karenge */
+input {
+    padding: 9px 31px 9px 31px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+
+
+}
+
+
+/* Email */
+.Email {
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+/* Emailinput */
+.Emailinput {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Phone Number */
+.Number {
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+/* Numberinput */
+.Numberinput {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Date of Birth */
+.DOB {
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+/* DOBinput */
+.DOBinput {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Gender */
+.Gender {
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 12px;
+    display: flex;
+    gap: 15px;
+
+}
+
+
+/* Country */
+.Country {
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+
+/* selectcountry */
+.selectcountry {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* select ke liye kam hiaa hai  */
+select {
+    padding: 9px 31px 9px 31px;
+
+    border-radius: 5px;
+}
+
+
+/* btn */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 25px;
+
+}
+
+/* button */
+button {
+    padding: 10px;
+    padding: 7px 21px 7px 21px;
+    cursor: pointer;
+    border-radius: 7px;
+
+
+}
+
+button:hover {
+    background-color: #b2b0b0;
+
+}
+
+
 
 
 /* spotify playlist */
@@ -746,6 +912,13 @@ ul {
     }
 
 
+    /* RegistrationForm */
+    .RegistrationForm{
+        width: 100%;
+        
+    }
+
+
 
 }
 
@@ -757,6 +930,12 @@ ul {
 
     /* card */
     .card {
+        width: 100%;
+
+    }
+
+    /* RegistrationForm */
+    .RegistrationForm{
         width: 100%;
 
     }

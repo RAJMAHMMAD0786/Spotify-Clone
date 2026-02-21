@@ -22,40 +22,61 @@ function secondsToMinutesSeconds(seconds) {
 }
 
 // http://127.0.0.1:3000/songs/
+
+// isase host karne pe nahi chal raha tha isiliye niche wala code used kiya gya hai
+
+// async function getsongs() {
+//     let a = await fetch("/songs/");
+//     let response = await a.text()
+//     console.log(response)
+
+//     let div = document.createElement("div");
+//     div.innerHTML = response;
+
+//     let as = div.getElementsByTagName("a");
+
+//     let songs = [];
+//     for (let index = 0; index < as.length; index++) {
+//         const element = as[index];
+
+//         // if (element.href.endsWith(".mp4")) {
+//         //     songs.push(element.href)                      //.split("/songs/")[1]
+//         // }
+
+//         if (element.href.endsWith(".mp4")) {
+//             let url = new URL(element.href);
+//             songs.push(url.pathname.split("/").pop());
+//         }
+//     }
+//     return songs;
+
+// }
+
+
+// ye used kiya gya hai because github netlify etc direct liten nahi karta hai song ko isisliye 
 async function getsongs() {
-    let a = await fetch("http://127.0.0.1:3000/songs/");
-    let response = await a.text()
-    console.log(response)
 
-    let div = document.createElement("div");
-    div.innerHTML = response;
+    let a = await fetch("./songs.json");
+    let data = await a.json();
 
-    let as = div.getElementsByTagName("a");
+    let songs = data.songs;
 
-    let songs = [];
-    for (let index = 0; index < as.length; index++) {
-        const element = as[index];
+    console.log("Loaded Songs:", songs);
 
-        // if (element.href.endsWith(".mp4")) {
-        //     songs.push(element.href)                      //.split("/songs/")[1]
-        // }
-
-        if (element.href.endsWith(".mp4")) {
-            let url = new URL(element.href);
-            songs.push(url.pathname.split("/").pop());
-        }
-    }
     return songs;
-
 }
 
 
+
+
+
 // playMusic function
-// first song set karne ke liye     
+
 
 const playMusic = (track, pause = false) => {
 
-    currentsong.src = track;   // yaha songs/ mat lagao
+    // Correct path
+    currentsong.src = `./songs/${track}`;
 
     if (!pause) {
         currentsong.play();
@@ -63,7 +84,7 @@ const playMusic = (track, pause = false) => {
     }
 
     document.querySelector(".songinfo").innerHTML = decodeURI(track);
-    document.querySelector(".songtime").innerHTML = "00:00 / 00:00"
+    document.querySelector(".songtime").innerHTML = "00:00 / 00:00";
 };
 
 

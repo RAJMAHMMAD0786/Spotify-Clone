@@ -913,9 +913,9 @@ ul {
 
 
     /* RegistrationForm */
-    .RegistrationForm{
+    .RegistrationForm {
         width: 100%;
-        
+
     }
 
 
@@ -934,8 +934,38 @@ ul {
 
     }
 
+    /* header ke child pe lag raha hai*/
+    .header>* {
+        padding: 0px;
+
+    }
+
+    /* buttons ke child pe lag raha hai */
+    .buttons>* {
+        margin: 0 1px;
+    }
+
+    /* songtime ko handle kiya gya hai */
+    .songtime {
+        width: auto;
+        width: 192px;
+    }
+
+    /* input nahi dikh raha tha achha se phone mai isisliye kiya gya hai */
+    input {
+        padding: 5px 63px 7px 1px;
+        margin-top: 9px;
+        border-radius: 5px;
+    }
+
+    /* jo song name ke width ko handle kiya gya hai */
+    .songinfo {
+        font-size: 14px;
+        width: 126px;
+    }
+
     /* RegistrationForm */
-    .RegistrationForm{
+    .RegistrationForm {
         width: 100%;
 
     }
